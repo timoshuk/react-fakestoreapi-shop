@@ -1,4 +1,5 @@
 import BlockContainer from "../block-container/BlockContainer";
+import MainNav from "../main-nav";
 
 import styles from "./Header.module.css";
 
@@ -6,16 +7,7 @@ const Header = () => {
   return (
     <header>
       <BlockContainer>
-        <div>LOGO</div>
-        <nav>
-          <ul>
-            <li>Item</li>
-            <li>Item</li>
-            <li>Item</li>
-            <li>Item</li>
-            <li>Item</li>
-          </ul>
-        </nav>
+        <MainNav />
       </BlockContainer>
     </header>
   );
