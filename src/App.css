@@ -352,6 +352,7 @@ template {
 
 :root {
   box-sizing: border-box;
+  font-size: 10px;
 }
 
 *,
@@ -366,4 +367,9 @@ template {
 html,
 body {
   overflow-x: hidden;
+}
+
+body {
+  font-size: 1.8rem;
+  line-height: 1.4;
 }

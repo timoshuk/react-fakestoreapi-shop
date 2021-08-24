@@ -1,3 +1,4 @@
+import React from "react";
 import styles from "./BlockContainer.module.css";
 
 const BlockContainer = ({ children }) => {
