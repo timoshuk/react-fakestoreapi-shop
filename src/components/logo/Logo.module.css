@@ -1,0 +1,14 @@
+.logo {
+  text-decoration: none;
+  color: var(--main-color);
+  font-size: 3.3rem;
+  font-weight: 900;
+  outline: none;
+  transition: all 0.4s ease-in-out;
+}
+
+.logo:focus,
+.logo:hover {
+  text-decoration: underline;
+  transform: translateX(20px);
+}

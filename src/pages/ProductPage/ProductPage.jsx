@@ -10,7 +10,7 @@ const ProductPage = () => {
 
   useEffect(() => {
     getSingleProduct(id, setProduct);
-  }, []);
+  }, [id]);
 
   return (
     <div className={styles.productPage}>
@@ -18,7 +18,7 @@ const ProductPage = () => {
 
       {product && (
         <>
-          <img src={product.image} />
+          <img src={product.image} alt={product.title} />
           <div>
             <h3>{product.title}</h3>
             <div>{product.description}</div>
