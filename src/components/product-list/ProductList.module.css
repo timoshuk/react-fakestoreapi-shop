@@ -1,5 +1,8 @@
 .productList {
   display: flex;
+  position: relative;
   flex-wrap: wrap;
   justify-content: space-around;
+  overflow-y: visible;
+  padding: 10px 0px 50px 0px;
 }

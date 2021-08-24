@@ -8,7 +8,7 @@ const ProductList = ({ products }) => {
     <ProductListItem
       key={item.id}
       id={item.id}
-      title={item.title}
+      title={cropText(item.title, 5)}
       description={cropText(item.description, 15)}
       image={item.image}
     />
