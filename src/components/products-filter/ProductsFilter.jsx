@@ -3,7 +3,7 @@ import { getCategories } from "../../utils/get-data";
 
 import styles from "./ProductsFilter.module.css";
 
-const ProductsFilter = () => {
+const ProductsFilter = ({ filterFunk }) => {
   const [categories, setCategories] = useState(null);
 
   useEffect(() => {
@@ -20,11 +20,14 @@ const ProductsFilter = () => {
 
   return (
     <div>
-      <label for="cars">
-        <span>Choose a car:</span>
-        <br />
-        <select className={styles.productFilter}>{dropDown}</select>
-      </label>
+      <br />
+      <select
+        onChange={(e) => filterFunk(e.target.value)}
+        className={styles.productFilter}
+      >
+        <option value="all">All</option>
+        {dropDown}
+      </select>
     </div>
   );
 };
