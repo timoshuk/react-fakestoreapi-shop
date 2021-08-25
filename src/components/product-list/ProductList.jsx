@@ -10,6 +10,7 @@ const ProductList = ({ products }) => {
       id={item.id}
       title={cropText(item.title, 5)}
       description={cropText(item.description, 15)}
+      price={item.price}
       image={item.image}
     />
   ));

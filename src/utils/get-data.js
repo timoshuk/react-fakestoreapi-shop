@@ -21,3 +21,12 @@ export const getSingleProduct = async (id, callback) => {
       console.log(error);
     });
 };
+
+export const getCategories = async (callback) => {
+  await axios
+    .get(`${baseUrl}/products/categories`)
+    .then((res) => callback(res.data))
+    .catch((error) => {
+      console.log(error);
+    });
+};
