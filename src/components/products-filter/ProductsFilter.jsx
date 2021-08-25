@@ -25,7 +25,7 @@ const ProductsFilter = ({ filterFunk }) => {
         onChange={(e) => filterFunk(e.target.value)}
         className={styles.productFilter}
       >
-        <option value="all">All</option>
+        <option value="All">All</option>
         {dropDown}
       </select>
     </div>
